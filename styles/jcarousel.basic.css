@@ -1,0 +1,77 @@
+.jcarousel-wrapper {
+    margin: 0 auto 15px;
+    border-bottom: 5px solid #f7b428;
+    position: relative;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 960px;
+    height: 480px;
+}
+
+.jcarousel ul {
+    width: 2880px;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    display: none;
+    top: 235px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #1a75ce;
+    color: #fff;
+    text-decoration: none;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-control-prev {
+    left: 10px;
+}
+
+.jcarousel-control-next {
+    right: 10px;
+}
+
+.jcarousel-wrapper:hover .jcarousel-control-next,
+.jcarousel-wrapper:hover .jcarousel-control-prev {
+    display: block;
+}
+
+.jcarousel-control-prev:hover,
+.jcarousel-control-next:hover {
+    background-color: #195d9e;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}

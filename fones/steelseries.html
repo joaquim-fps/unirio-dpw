@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>Fones de Ouvido - SdG</title>
+		<link rel="stylesheet" href="../styles/normalize.css">
+		<link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="../styles/jcarousel.basic.css">
+		<link rel="stylesheet" href="../fonts/font-awesome-4.0.3/css/font-awesome.min.css">
+		<script src="../js/prefixfree.min.js"></script>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/jquery.jcarousel.js"></script>
+	</head>
+
+	<body onLoad="slide1()">
+		<div class="container">
+			<header class="clearfix">
+				<a href="../index.html">
+					<div class="clearfix" id="logo">
+						<img src="../images/logo.png" alt="logo"><h1>Senhor dos Games</h1>
+					</div>
+				</a>
+
+				<form id="search-box-input" method="get" action="../search.html">
+					<div class="search-bar">
+						<input id="search-input-text" type="text" placeholder="Faça sua busca aqui...">
+						<button onClick="setLocalStorage()">Buscar</button>
+					</div>
+				</form>
+
+				<a href="../carrinho.html">
+					<div id="cart">
+						<i class="fa fa-shopping-cart fa-4x"></i>
+					</div>
+				</a>
+			</header>
+
+			<nav class="clearfix">
+				<ul class="clearfix navigation">
+					<li>
+						<a href="../index.html">
+							<div id="nav-home">
+								<p>Home</p>
+							</div>
+						</a>
+					</li>
+					<li>
+							<a href="../mouses/index.html">
+								<div id="nav-mouse">
+									<p>Mouses</p>
+								</div>
+							</a>
+						<ol class="drop-down mouse-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Marcas</h3></div></li>
+							<li class="marca"><a href="../mouses/corsair.html"><div class="marca-menu-drop">Corsair</div></a></li>
+							<li class="marca"><a href="../mouses/razer.html"><div class="marca-menu-drop">Razer</div></a></li>
+							<li class="marca"><a href="../mouses/steelseries.html"><div class="marca-menu-drop">Steelseries</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="../mouse-pads/index.html">
+							<div id="nav-pads">
+								<p>Mouse-pads</p>
+							</div>
+						</a>
+						<ol class="drop-down pad-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Marcas</h3></div></li>
+							<li class="marca"><a href="../mouse-pads/corsair.html"><div class="marca-menu-drop">Corsair</div></a></li>
+							<li class="marca"><a href="../mouse-pads/razer.html"><div class="marca-menu-drop">Razer</div></a></li>
+							<li class="marca"><a href="../mouse-pads/steelseries.html"><div class="marca-menu-drop">Steelseries</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="index.html">
+							<div id="nav-headphone"  class="active">
+								<p>Fones de ouvido</p>
+							</div>
+						</a>
+						<ol class="drop-down fone-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Marcas</h3></div></li>
+							<li class="marca"><a href="sennheiser.html"><div class="marca-menu-drop">Sennheiser</div></a></li>
+							<li class="marca"><a href="steelseries.html"><div class="marca-menu-drop">Steelseries</div></a></li>
+							<li class="marca"><a href="thermaltake.html"><div class="marca-menu-drop">Thermaltake</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="../teclados/index.html">
+							<div id="nav-keyboard">
+								<p>Teclados</p>
+							</div>
+						</a>
+						<ol class="drop-down keyboard-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Marcas</h3></div></li>
+							<li class="marca"><a href="../teclados/corsair.html"><div class="marca-menu-drop">Corsair</div></a></li>
+							<li class="marca"><a href="../teclados/razer.html"><div class="marca-menu-drop">Razer</div></a></li>
+							<li class="marca"><a href="../teclados/thermaltake.html"><div class="marca-menu-drop">Thermaltake</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="../combos/index.html">
+							<div id ="nav-combos">
+								<p>Combos</p>
+							</div>
+						</a>
+						<ol class="drop-down combo-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Kits</h3></div></li>
+							<li class="marca"><a href="../combos/produtos/kit-basico.html"><div class="marca-menu-drop">Básico</div></a></li>
+							<li class="marca"><a href="../combos/produtos/kit-intermediario.html"><div class="marca-menu-drop">Intermediário</div></a></li>
+							<li class="marca"><a href="../combos/produtos/kit-avancado.html"><div class="marca-menu-drop">Avançado</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="../contato.html">
+							<div id="nav-contact">
+								<p>Contato</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<section class="clearfix">
+				<aside>
+						<section id="menu-lateral-marcas">
+							<h2>Marcas</h2>
+							<ul>
+								<a href="sennheiser.html"><li><img src="../images/sennheiser-logo.png" alt="sennheiser"></li></a>
+								<a href="steelseries.html"><li><img src="../images/steelseries-logo.png" alt="steelseries"></li></a>
+								<a href="thermaltake.html"><li><img src="../images/thermaltake-logo.png" alt="thermaltake"></li></a>
+							</ul>
+						</section>
+
+						<section id="login-area">
+							<h2>Login</h2>
+							<form method="post" action ="../minha-conta.html">
+								<label for="username">Usuário</label>
+								<input type="text" id="username" placeholder="Nome de usuário">
+								<label for="password">Senha</label>
+								<input type="password" id="password" placeholder="Senha">
+								<button type="submit">Entrar</button> <span>ou</span> <a href="../cadastro.html">Cadastrar</a>
+							</form>
+						</section>
+
+						<section id="banner-area">
+							<img id="banner" src="../images/carousel/banner-1.png" alt="banner">
+						</section>
+
+						<section id="top-sellers">
+							<h2>Mais vendidos</h2>
+							<ol>
+								<a href="../mouses/produtos/razer-deathadder.html"><li><img src="../images/products/Razer Deathadder.png" alt=""><p>Mouse Razer DeathAdder 3500DPI</p></li></a>
+								<a href="../mouse-pads/produtos/razer-goliathus-speed.html"><li><img src="../images/products/Razer Goliathus Speed.png" alt=""><p>Mouse-pad Razer Goliathus Speed</p></li></a>
+								<a href="../mouse-pads/produtos/steelseries-qck-mini.html"><li><img src="../images/products/Steelseries QcK Mini.png" alt=""><p>Mouse-pad Steelseries QcK Mini</p></li></a>
+								<a href="../teclados/produtos/tt-esports-challenger.html"><li><img src="../images/products/TT eSports Challenger.png" alt=""><p>Teclado Thermaltake eSports Challenger</p></li></a>
+								<a href="produtos/steelseries-siberia-v2-branco.html"><li><img src="../images/products/Steelseries Siberia V2 White.png" alt=""><p>Fone de ouvido Steelseries Siberia V2 Branco</p></li></a>
+							</ol>
+						</section>
+				</aside>
+
+
+
+				<div class="line-1 clearfix">
+					<h2><a href="index.html">Fones de ouvido</a> - Steelseries</h2>
+				   
+					<article class="article-change">
+						<a href="produtos/steelseries-siberia-v2-navi.html">
+							<div class="product">
+								<img src="../images/products/Steelseries Siberia V2 Navi.png">
+								<h3>Fone de ouvido Steelseries Siberia V2 Navi Edition</h3>
+								<p><span class="riscado">R$439,00</span><br><span class="destaque price">R$399,00</span></p>
+								<p>Em até <span class="destaque">12x</span> de <span class="destaque 12x"></span> no cartão ou <span class="destaque percent10"></span> à vista com <span class="destaque">10%</span> de desconto</p>
+							</div>
+						</a>
+						<form class="cart-form" method="post" action="../carrinho.html">
+							<input type="hidden" value="images/products/Steelseries Siberia V2 Navi.png">
+							<input type="hidden" value="fones/produtos/steelseries-siberia-v2-navi.html">
+							<input type="hidden" value="Fone de ouvido Steelseries Siberia V2 Navi Edition">
+							<input type="hidden" value="399.00">
+							<input type="hidden" value="1">
+							<button>Comprar</button>
+						</form>
+					</article>
+
+					<article class="article-change">
+						<a href="produtos/steelseries-siberia-v2-branco.html">
+							<div class="product">
+								<img src="../images/products/Steelseries Siberia V2 White.png">
+								<h3>Fone de ouvido Steelseries Siberia V2 Branco</h3>
+								<p><span class="riscado"></span><br><span class="destaque price">R$399,00</span></p>
+								<p>Em até <span class="destaque">12x</span> de <span class="destaque 12x"></span> no cartão ou <span class="destaque percent10"></span> à vista com <span class="destaque">10%</span> de desconto</p>
+							</div>
+						</a>
+						<form class="cart-form" method="post" action="../carrinho.html">
+							<input type="hidden" value="images/products/Steelseries Siberia V2 White.png">
+							<input type="hidden" value="fones/produtos/steelseries-siberia-v2-branco.html">
+							<input type="hidden" value="Fone de ouvido Steelseries Siberia V2 Branco">
+							<input type="hidden" value="399.00">
+							<input type="hidden" value="1">
+							<button>Comprar</button>
+						</form>
+					</article>
+					
+					<article class="article-change">
+						<a href="produtos/steelseries-siberia-v2-preto.html">
+							<div class="product">
+								<img src="../images/products/Steelseries Siberia V2 Black.png">
+								<h3>Fone de ouvido Steelseries Siberia V2 Preto</h3>
+								<p><span class="riscado"></span><br><span class="destaque price">R$399,00</span></p>
+								<p>Em até <span class="destaque">12x</span> de <span class="destaque 12x"></span> no cartão ou <span class="destaque percent10"></span> à vista com <span class="destaque">10%</span> de desconto</p>
+							</div>
+						</a>
+						<form class="cart-form" method="post" action="../carrinho.html">
+							<input type="hidden" value="images/products/Steelseries Siberia V2 Black.png">
+							<input type="hidden" value="fones/produtos/steelseries-siberia-v2-preto.html">
+							<input type="hidden" value="Fone de ouvido Steelseries Siberia V2 Preto">
+							<input type="hidden" value="399.00">
+							<input type="hidden" value="1">
+							<button>Comprar</button>
+						</form>
+					</article>
+				</div>	
+		    </section>
+
+		    <footer class="clearfix">
+
+		    	<section id="newsletter">
+		    		<h2>Newsletter</h2>
+		    		<p>Assine e concorra a cupons promocionais todo mês!</p>
+					<form method="post" action="#">
+		    			<input type="text" placeholder="Escreva seu email aqui...">
+		    			<button type="submit">Assinar</button>
+		    		</form>
+		    	</section>
+
+		    	<section id="payment">
+		    		<h2>Formas de pagamento</h2>
+		    		<p><img src="../images/pagamento.png" alt="payment"></p>
+		    	</section>
+
+		    	<section id="social">
+		    		<a href="http://www.facebook.com.br" target="_blank"><img src="../images/facebook-link.png" onmouseover="this.src='../images/facebook-active.png'" onmouseout="this.src='../images/facebook-link.png'" alt="facebook"></a>
+		    		<a href="http://www.twitter.com" target="_blank"><img src="../images/twitter-link.png" onmouseover="this.src='../images/twitter-active.png'" onmouseout="this.src='../images/twitter-link.png'" alt="twitter"></a>
+		    	</section>
+		    	<img src="../images/ssl.png" alt="security" id="ssl">
+		    	<p id="rights">Todos os direitos reservados | Site criado por Joaquim Ferreira Palmeira da Silva</p>
+		    </footer>
+		</div>
+
+		<script>
+				function slide1(){
+					document.getElementById('banner').src="../images/carousel/banner-1.png";
+					setTimeout("slide2()", 6000)
+				}
+ 
+				function slide2(){
+					document.getElementById('banner').src="../images/carousel/banner-2.png";
+					setTimeout("slide1()", 6000)
+				}
+		</script>
+
+		<script>
+			$(document).ready(function() {
+       			$('.article-change').bind("mouseover", function(){
+            		var color  = $(this).css("background-color");
+
+            		$(this).css("background", "#EEE");
+
+            		$(this).bind("mouseout", function(){
+               			 $(this).css("background", color);
+            		})    
+        		})    
+    		})
+		</script>
+		<script src="../js/search.js"></script>
+		<script src="../js/priceGenerator.js"></script>
+		<script src="../js/shoppingCart.js"></script>
+	</body>
+
+</html>

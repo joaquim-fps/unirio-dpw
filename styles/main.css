@@ -1,0 +1,1483 @@
+/* Delimitação do tamanho da página */
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+/* Classe geral */
+
+.hidden {
+	display: hidden;
+}
+
+/* Estilo do placeholder */
+
+::-webkit-input-placeholder {
+	font-style: italic;
+	font-weight: normal;
+}
+
+::-moz-input-placeholder {
+	font-style: italic;
+	font-weight: normal;
+}
+
+::-ms-input-placeholder {
+	font-style: italic;
+	font-weight: normal;
+}
+
+/* Fix para float */
+
+.clearfix::before, .clearfix::after {
+	content: "";
+	display: table;
+}
+
+.clearfix::after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* Cores de fundo */
+
+body {
+	background-color: #DDD;
+	color: white;
+}
+
+.container {
+	background-color: #FFF;
+	box-shadow: 0 0 5px 5px #888;
+}
+
+header {
+	background-color: #1a75ce;
+	
+}
+
+nav {
+	background-color: #195d9e;
+}
+
+footer {
+	background-color: #1a75ce;
+}
+
+/* Estilo da logo */
+
+div#logo {
+	width: 300px;
+	float: left;
+}
+
+header img {
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 1.5em;
+	display: inline-block;
+	position: relative;
+	top: 30px;
+	left: -6px;
+}
+
+a:link div#logo, a:active div#logo, 
+a:hover div#logo, a:visited div#logo {
+	color: white;
+	text-decoration: none;
+}
+
+/* Seção de estilo de busca */
+
+	/* Estilo da barra de busca */
+
+	header form {
+		float: left;
+		width: 460px;
+		margin: 0 50px;
+		position: relative;
+		top: 25px;
+	}
+
+	header input[type="text"] {
+		width: 350px;
+		color: black;
+		font-weight: bold;
+		border-radius: 5px;
+		border: 0;
+		padding: 9px;
+	}
+
+	header form button, footer button {
+		position: relative;
+		left: -10px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border: 0;
+		padding: 9.5px;
+		color: white;
+		background-color: #f7b428;
+	}
+
+	header form button:hover, 
+	footer button:hover {
+		background-color: orange;
+	}
+
+	header form button:active, 
+	footer button:active {
+		background-color: #e65c00;
+	}
+
+	/* Estilo da página de busca (página específica) */
+
+	form.search-filters {
+		margin-left: 10px;
+		width: 230px;
+		border-radius: 5px;
+	}
+
+	form.search-filters h3 {
+		color: black;
+		text-align: center;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #CCC;
+	}
+
+	form.search-filters p {
+		color: black;
+		margin-left: 10px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	form.search-filters p#input-text-filter {
+		margin: inherit 10px inherit 10px;
+		margin-right: 10px;
+	}
+
+	form.search-filters h3:first-child {
+		margin-top: 17px;
+	}
+
+	aside form.search-filters ul {
+		margin-left: 10px;
+	}
+
+	aside form.search-filters ul li {
+		text-align: left;
+	}
+
+	form.search-filters button {
+		text-align: center;
+		margin: 10px 60px;
+	}
+
+	form.search-filters span {
+		color: black;
+	}
+
+	form.search-filters input[type="range"] {
+		margin: 0 10px 5px;
+		width: 200px;
+	}
+
+	div.input-range-value-position {
+		text-align: center;
+	}
+
+	form.search-filters input[type="checkbox"] {
+		display: inline-block;
+		margin-right: 5px;
+		width: 20px;
+		height: 20px;
+	}
+
+	form.search-filters input[type="checkbox"] + span {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	div#search-results div.line-1 {
+		border-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 30px;
+		border-bottom: 0;
+	}
+
+	div#search-results div.line-1 h2 {
+		border-bottom: 1px solid #CCC;
+	}
+
+	div#search-results div.line-1 article {
+		border-top: 0;
+		margin: 10px 0;
+		display: none;
+	}
+
+	span#search-results-count {
+		font-size: 0.9em;
+		font-style: italic;
+	}
+
+/* Fim da seção de estilo de busca */
+
+/* Seção de estilo do carrinho de compras */
+
+	/* Estilo do carrinho no cabeçalho */
+
+	div#cart {
+		float: right;
+		width: 100px;
+		height: 80px;
+		background-color: #f7b428;
+	}
+
+	i {
+		color: white;
+		position: relative;
+		top: 5px;
+		left: 18px;
+	}
+
+	a:link div#cart, a:visited div#cart {
+		color: white;
+		background-color: #f7b428;
+	}
+
+	a:hover div#cart {
+		background-color: orange;
+	}
+
+	a:active div#cart {
+		background-color: #e65c00;
+	}
+
+	/* Estilo da página do carrinho (página específica) */
+
+	.carrinho-page {
+		color: black;
+	}
+
+	.carrinho-page h2 {
+		text-align: center;
+		padding: 10px;
+		margin: 0 10px;
+		border-bottom: 1px solid #CCC;
+	}
+
+	.carrinho-page h3 {
+		text-align: center;
+		padding: 10px;
+		margin: 10px 10px 0;
+	}
+
+	.carrinho-page div.total-compra h3 {
+		border-bottom: 1px solid #CCC;
+	}
+
+	.carrinho-page div {
+		float: left;
+	}
+
+	.carrinho-page div.total-compra {
+		float: right;
+		margin-right: 10px;
+	}
+
+	.items-width {
+		width: 580px;
+		margin-left: 10px;
+	}
+
+	.quantity-width {
+		width: 170px;
+		margin-right: 40px;
+	}
+
+	.price-width {
+		width: 150px;
+		margin-right: 0;
+	}
+
+	div#myShoppingCart {
+		width: 960px;
+	}
+
+	div#myShoppingCart article {
+		padding: 15px 0;
+		border-bottom: 1px solid #EEE;
+		margin: 0px 20px 0px;
+		width: 920px;
+		height: 75px;
+		text-align: left;
+	}
+
+	div#myShoppingCart article:first-child {
+		border-top: 1px solid #EEE;
+		margin: 10px 20px 0;
+	}
+
+	div#myShoppingCart article div.items-width {
+		text-align: left;
+	}
+	
+
+	div#myShoppingCart article img {
+		height: 75px;
+		width: 75px;
+		margin-left: 5px;
+	}
+
+	div#myShoppingCart article div.items-width p {
+		display: inline-block;
+		margin: 0 0 0 30px;
+		font-size: 1.3em;
+		position: relative;
+		top: -30px;
+	}
+
+	div#myShoppingCart article div.items-width a:link,
+	div#myShoppingCart article div.items-width a:visited {
+		text-decoration: none;
+		color: black;
+	}
+
+	div#myShoppingCart article div.items-width a:hover {
+		text-decoration: underline;
+	}
+
+	div#myShoppingCart .quantity-width {
+		position: relative;
+		top: 25px;
+		left: 26px;
+	}
+
+	div#myShoppingCart article input[type="number"] {
+		width: 50px;
+		padding: 5px;
+		border-radius: 5px;
+		border: 1px solid #CCC;
+	}
+
+	div#myShoppingCart .price-width {
+		width: 120px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.5em;
+		position: relative;
+		top: 10px;
+		left: -5px;
+	}
+
+	div#cart-total, div#frete-total {
+		margin-top: 20px;
+		margin-bottom: 0px;
+		font-weight: bolder;
+		color: green;
+		width: 935px;
+		font-size: 1.2em;
+		text-align: right;
+		vertical-align: bottom;
+	}
+
+	div#frete-total {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+	p.empty-cart {
+		font-size: 20pt;
+		text-align: center;
+		color: black;
+		opacity: 0.5;
+		line-height: 200%;
+	}
+
+	div#myShoppingCart .quantity-width button {
+		display: inline-block;
+		background: #FF0000;
+		cursor: pointer;
+		font-size: 14pt;
+		font-weight: bolder;
+		border: 0;
+		padding: 0;
+		position: relative;
+		top: 2px;
+		left: 0px;
+		padding: 1px 5px;
+		margin-left: 5px;
+		border-radius: 5px;
+		color: white;
+	}
+
+	div#myShoppingCart .quantity-width button:hover {
+		background: #F53333;
+	}
+
+	div#myShoppingCart .quantity-width button:active {
+		background: #AD1111;
+	}
+
+	span#cart-item-count {
+		font-style: italic;
+		font-size: 0.9em;
+	}
+
+	span#cart-buttons {
+		float: left;
+		margin-left: 25px;
+	}
+
+	span#cart-buttons button {
+		margin-left: 40px;
+		font-size: 16px;
+		font-weight: normal;
+		border-radius: 5px;
+		border: 0;
+		padding: 9px;
+		color: white;
+		background-color: #f7b428;
+	}
+
+	span#cart-buttons button:hover {
+		background-color: orange;
+	}
+
+	span#cart-buttons button:active {
+		background-color: #e65c00;
+	}
+
+	img.back-arrow-img {
+		height: 30px;
+		width: 30px;
+		position: relative;
+		top: 7px;
+		left: 0;
+		transition: left 0.1s ease-out;
+	}
+
+	a.back-to-store:link, a.back-to-store:visited {
+		vertical-align: middle;
+		color: black;
+		text-decoration: none;
+	}
+
+	a.back-to-store:hover img {
+		left: -10px;
+	}
+
+/* Fim da seção de estilo do carrinho de compras */
+
+/* Estilo do menu de navegação */
+
+nav {
+	border-bottom: 5px solid #f7b428;
+}
+
+.navigation {
+	margin: 0;
+	padding: 0;
+}
+
+.navigation li {
+	list-style-type: none;
+	float: left;
+	position: relative;
+}
+
+nav .navigation > li > a div {
+	float: left;
+	padding: 15px 31px;
+}
+
+nav div#nav-home {
+	margin-left: 23px;
+}
+
+nav div p {
+	margin: 0;
+	text-align: center;	
+}
+
+.active p {
+	color:#f7b428 ;
+}
+
+nav ul > li > a:link,
+nav ul > li > a:visited,
+nav ul > li > a:hover,
+nav ul > li > a:active {
+	text-decoration: none;
+}
+
+nav ul > li > a:link div, 
+nav ul > li > a:visited div {
+	background-color: #195d9e;
+	color: white;
+	text-decoration: none;
+}
+
+nav ul > li > a:hover div {
+	background-color: #0F518F;
+}
+
+nav ul > li > a:active div {
+	background-color: #0F375E;
+}
+
+.drop-down {
+	opacity: 0;
+	position: absolute;
+	top: 48px;
+	width: 150px;
+	color: black;
+	z-index: 1;
+	list-style-type: none;
+	padding-left: 0;
+	padding: 0 7px;
+	border: 1px solid black;
+	border-top: 5px solid #f7b428;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background: #FFF;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
+	overflow: hidden;
+	height: 0px;
+	transition: all 0.4s;
+}
+
+
+nav .navigation li:hover .drop-down {
+	opacity: 1;
+	height: 169px;
+	padding: 7px;
+}
+
+.mouse-menu {
+	width: 103px;
+}
+
+.pad-menu {
+	width: 135px;
+}
+
+.fone-menu {
+	width: 164px;
+}
+
+.keyboard-menu {
+	width: 112px;
+}
+
+.combo-menu {
+	width: 108px;
+}
+
+ol.mouse-menu div.titulo-menu-drop {
+	width: 103px;
+	border-bottom: 1px solid #CCC;
+	margin-bottom: 10px;
+}
+
+ol.pad-menu div.titulo-menu-drop {
+	width: 135px;
+	border-bottom: 1px solid #CCC;
+	margin-bottom: 10px;
+}
+
+ol.fone-menu div.titulo-menu-drop {
+	width: 164px;
+	border-bottom: 1px solid #CCC;
+	margin-bottom: 10px;
+}
+
+ol.keyboard-menu div.titulo-menu-drop {
+	width: 112px;
+	border-bottom: 1px solid #CCC;
+	margin-bottom: 10px;
+}
+
+ol.combo-menu div.titulo-menu-drop {
+	width: 108px;
+	border-bottom: 1px solid #CCC;
+	margin-bottom: 10px;
+}
+
+ol.mouse-menu div.marca-menu-drop {
+	width: 103px;
+	padding: 10px 0;
+}
+
+ol.pad-menu div.marca-menu-drop {
+	width: 135px;
+	padding: 10px 0;
+}
+
+ol.fone-menu div.marca-menu-drop {
+	width: 164px;
+	padding: 10px 0;
+}
+
+ol.keyboard-menu div.marca-menu-drop {
+	width: 112px;
+	padding: 10px 0;
+}
+
+ol.combo-menu div.marca-menu-drop {
+	width: 108px;
+	padding: 10px 0;
+}
+
+ol.drop-down li h3 {
+	text-align: center;
+	margin: 5px 0;
+}
+
+ol.drop-down li.marca {
+	float: none;
+	text-align: center;
+	margin-bottom: 3px;
+}
+
+ol.drop-down li.marca:first-child {
+	margin-bottom: 0;
+}
+
+ol.drop-down a:link, ol.drop-down a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+ol.drop-down a:hover div {
+	background: #EEE;
+}
+
+ol.drop-down a:active div {
+	background: #CCC;
+}
+
+/* Estilo do menu lateral */
+
+aside {
+	float: left;
+}
+
+aside section {
+	color: black;
+	width: 230px;
+	margin-left: 10px;
+	background-color: #FFF;
+	border-radius: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+aside h2 {
+	margin-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCC;
+}
+
+aside section#login-area {
+	margin-bottom: 10px;
+}
+
+aside ol {
+	padding-left: 0;
+	margin: 0 0 10px;
+	list-style-type: none;
+}
+
+aside ol li {
+	font-size: 0.9em;
+	padding: 5px 0;
+}
+
+aside ol li img {
+	width: 60px;
+	height: 60px;
+}
+
+aside ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+aside ul li {
+	text-align: center;
+	padding: 10px 0;
+	margin-top: 5px;
+}
+
+aside ul a:first-child li {
+	margin-top: 0;
+}
+
+aside ul li img {
+	height: 50px;
+	width: 200px;
+}
+
+aside ul li img.all {
+	height: 25px;
+	width: 100px;
+}
+
+aside ul a:hover li {
+	background: #EEE;
+}
+
+aside section#top-sellers p {
+	padding-right: 10px;
+	text-align: center;
+	margin: 0 0 10px;
+}
+
+aside label {
+	display: none;
+}
+
+aside input {
+	display: block;
+}
+
+aside input[type="text"], aside input[type="password"]  {
+	width: 190px;
+	color: black;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 0;
+	padding: 9px;
+	border: 1px solid #CCC;
+	margin-left: 10px;
+}
+
+aside input[type="password"] {
+	margin-top: 5px;
+}
+
+aside form button {
+	border-radius: 5px;
+	border: 0;
+	padding: 9px;
+	color: white;
+	background-color: #f7b428;
+	margin: 10px 0;
+}
+
+aside form button:hover {
+	background-color: orange;
+}
+
+aside form button:active {
+	background-color: #e65c00;
+}
+
+aside section#login-area a:link, aside section#login-area a:visited {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+aside section#login-area a:hover {
+	text-decoration: underline;
+}
+
+aside section#login-area a:active {
+	color: #e65c00;
+}
+
+aside section#top-sellers a:link, aside section#top-sellers a:visited, aside section#top-sellers a:active {
+	text-decoration: none;
+	color: black;
+	font-weight: normal;
+}
+
+section#top-sellers a:hover li {
+	background-color: #EEE;
+}
+
+section#banner-area {
+	padding: 10px 0 20px;
+}
+
+section#banner-area img {
+	width: 200px;
+	height: 420px;
+	border: 3px solid #CCC;
+}
+
+/* Estilo do formulário de contato (página específica) */
+
+section#contact-form {
+	margin: 0 auto;
+}
+
+section#contact-form img {
+	width: 25px;
+	height: 25px;
+	vertical-align: bottom;
+}
+
+section#contact-form h2 {
+	color: black;
+	text-align: center;
+	border-bottom: 1px solid #CCC;
+	margin: 0 10px;
+	padding: 10px;
+}
+
+section#contact-email-form {
+	margin-left: 20px;
+	width: 660px;
+	margin-bottom: 25px;
+	float: left;
+}
+
+section#contact-form h3 {
+	color: black;
+	text-align: center; 
+	margin-bottom: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCC;
+}
+
+section#contact-form p {
+	color: black;
+	margin: 20px 0 20px 5px;
+}
+
+section#contact-email-form label {
+	display: inline-block;
+	font-weight: bold;
+	width: 90px;
+}
+
+section#contact-email-form input, 
+section#contact-email-form textarea {
+	display: inline-block;
+	width: 220px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	padding: 9px;
+}
+
+section#contact-email-form textarea {
+	height: 100px;
+	max-height: 100px;
+	max-width: 220px;
+	vertical-align: top;
+}
+
+section#contact-email-form button {
+	color: black;
+}
+
+section#contact-email-form button {
+	border-radius: 5px;
+	border: 0;
+	padding: 9.5px;
+	color: white;
+	background-color: #f7b428;
+}
+
+section#contact-email-form button:hover {
+	background-color: orange;
+}
+
+section#contact-email-form button:active {
+	background-color: #e65c00;
+}
+
+span.hint {
+	opacity: 0;
+	background-color: #EEE;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	font-size: 0.8em;
+	margin-left: 25px;
+	padding: 3px;
+	transition: opacity 0.5s;
+	display: inline-block;
+
+}
+
+input:focus + .hint, textarea:focus + .hint {
+	opacity: 1;
+}
+
+section#contact-phone {
+	float: right;
+	width: 210px;
+	margin-right: 20px;
+}
+
+div#phones p:last-child {
+	padding-bottom: 10px;
+}
+
+span.negrito {
+	font-weight: bold;
+}
+
+#email-validate1, #email-validate2, #email-validate3,
+#name-validate, #subject-validate,
+#message-validate1, #message-validate2 {
+	width: 335px;
+	text-align: right;
+	display: none;
+	font-size: 0.8em;
+	margin-top: 10px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: red;
+}
+
+/* Seção de estilo do formulário de cadastro (página específica) */
+
+section#register-form {
+	color: black;
+}
+
+section#register-form img {
+	width: 25px;
+	height: 25px;
+	vertical-align: bottom;
+}
+
+section#register-form h2 {
+	text-align: center;
+	margin: 0 10px;
+	padding: 10px;
+	border-bottom: 1px solid #CCC;
+}
+
+form#register div {
+	width: 480px;
+	float: left;
+}
+
+form#register div.accs {
+	width: 960px;
+}
+
+form#register div.contact-information h3{
+	margin-top: 15px;
+}
+
+form#register h3 {
+	text-align: center;
+	margin: 10px 20px;
+	padding: 10px;
+	border-bottom: 1px solid #CCC;
+}
+
+form#register div label {
+	display: inline-block;
+	font-weight: bold;
+	width: 160px;
+	text-align: right;
+}
+
+form#register input, form#register select {
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	padding: 9px;
+}
+
+form#register input[type="text"], 
+form#register input[type="number"], 
+form#register input[type="date"] {
+	width: 150px;
+}
+
+form#register input[type="radio"] {
+	width: 15px;
+	height: 15px;
+}
+
+form#register div.accs label {
+	margin-left: 250px;
+}
+
+form#register div.accs input {
+	width: 200px;
+}
+
+form#register div.accs input#pass {
+	padding: 10px 9px 9px;
+}
+
+form#register div.accs input#pass + span {
+	vertical-align: top;
+}
+
+form#register input#ddd,
+form#register input#ddd2 {
+	width: 45px;
+}
+
+form#register input#num {
+	width: 60px;
+}
+
+div.contact-information {
+	margin-bottom: 15px;
+}
+
+form#register div#div-button-fix {
+	float: none;
+	width: 960px;
+	margin: 0 auto;
+}
+
+section#register-form button {
+	display: block;
+	margin: 0 auto 20px auto;
+	border-radius: 5px;
+	border: 0;
+	padding: 9.5px;
+	color: white;
+	background-color: #f7b428;
+}
+
+section#register-form button:hover {
+	background-color: orange;
+}
+
+section#register-form button:active {
+	background-color: #e65c00;
+}
+
+#validate-email1, #validate-email2, #validate-email3, 
+#validate-email-confirm1, #validate-email-confirm2,
+#validate-pass1, #validate-pass2, #validate-pass3, #validate-pass4,
+#validate-pass-confirm1, #validate-pass-confirm2,
+#validate-cep1, #validate-cep2, #validate-cep3,
+#validate-address, #validate-add-num1, #validate-add-num2,
+#validate-bairro1, #validate-bairro2, #validate-country1, #validate-country2,
+#validate-state, #validate-city1, #validate-city2,
+#validate-nome1, #validate-nome2, #validate-sex, #validate-birth,
+#validate-cpf1, #validate-cpf2, #validate-cpf3, #validate-cpf4,
+#validate-tel1, #validate-tel2, #validate-cel1, #validate-cel2 {
+	text-align: right;
+	display: none;
+	font-size: 0.8em;
+	margin-top: 10px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: red;
+}
+
+#validate-email1, #validate-email2, #validate-email3, 
+#validate-email-confirm1, #validate-email-confirm2,
+#validate-pass1, #validate-pass2, #validate-pass3, #validate-pass4,
+#validate-pass-confirm1, #validate-pass-confirm2 {
+	width: 632px;
+}
+
+#validate-cep1, #validate-cep2, #validate-cep3,
+#validate-address, #validate-add-num1, #validate-add-num2,
+#validate-bairro1, #validate-bairro2, #validate-country1, #validate-country2,
+#validate-state, #validate-city1, #validate-city2,
+#validate-nome1, #validate-nome2, #validate-sex, #validate-birth,
+#validate-cpf1, #validate-cpf2, #validate-cpf3, #validate-cpf4 {
+	width: 332px;
+}
+
+#validate-tel1, #validate-tel2, #validate-cel1, #validate-cel2 {
+	width: 419px;
+}
+
+/* Fim da seção de estilo do formulário de cadastro */
+
+/* Estilo dos produtos em destaque */
+
+div.line-1 h2, div.line-3 h2 {
+	color: black;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCC;
+}
+
+article {
+	width: 200px;
+	height: 365px;
+	float: left;
+	color: black;
+	font-size: 0.8em;
+	margin-top: 10px;
+	text-align: center;
+	padding: 20px 10px;
+	background-color: #FFF;
+}
+
+.combo-article {
+	padding-bottom: 0;
+}
+
+div.line-1, div.line-2, div.line-3 {
+	padding: 10px 0;
+	margin-right: 20px;
+	width: 660px;
+	float: right;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+div.line-2 {
+	padding-top: 0;
+}
+
+div.line-2:last-child {
+	border: 0;
+	padding-bottom: 10px;
+}
+
+article img {
+	width: 150px;
+	height: 150px;
+}
+
+article span.destaque {
+	color: #e65c00;
+	font-weight: bold;
+}
+
+article span.riscado {
+	text-decoration: line-through;
+}
+
+div.line-1 article button, 
+div.line-2 article button, 
+div.line-3 article button {
+	border-radius: 5px;
+	border: 0;
+	padding: 9.5px;
+	color: white;
+	background-color: #f7b428;
+}
+
+div.line-1 article button:hover, 
+div.line-2 article button:hover, 
+div.line-3 article button:hover {
+	background-color: orange;
+}
+
+div.line-1 article button:active, 
+div.line-2 article button:active, 
+div.line-3 article button:active {
+	background-color: #e65c00;
+}
+
+div.line-1 article a:link, 
+div.line-2 article a:link, 
+div.line-3 article a:link,
+div.line-1 article a:visited, 
+div.line-2 article a:visited, 
+div.line-3 article a:visited {
+	color: black;
+	background-color: #FFF;
+	text-decoration: none;
+}
+
+/* Seção de estilo para página individual dos produtos (página específica)*/
+
+div.single-product {
+	color: black;
+}
+
+div.single-product h2 {
+	color: black;
+	text-align: center;
+	margin: 0 10px;
+	padding: 10px;
+	border-bottom: 1px solid #CCC;
+}
+
+div.single-product h3 {
+	color: black;
+	text-align: center;
+	margin: 0 20px;
+	padding: 10px;
+	border-bottom: 1px solid #CCC;
+}
+
+div.single-product p {
+	margin: 20px 25px;
+}
+
+div.single-product section > ul li {
+	margin-right: 25px;
+	list-style-type: square;
+}
+
+div.single-product button {
+	border-radius: 5px;
+	border: 0;
+	padding: 12px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: white;
+	background-color: #f7b428;
+	margin-top: 20px;
+}
+
+div.single-product button:hover {
+	background-color: orange;
+}
+
+div.single-product button:active {
+	background-color: #e65c00;
+}
+
+.buy { 
+	text-align: center;
+	width: 400px;
+	float: right;
+}
+
+.buy img {
+	width: 350px;
+	height: 50px;
+}
+
+.green {
+	color: green;
+	font-weight: bold;
+}
+
+.buy i {
+	top: 0;
+	left: 0;
+}
+
+.buy ul {
+	float: left;
+	padding-left: 0;
+}
+
+.buy ul {
+	margin-top: 0;
+}
+
+.buy ul li {
+	padding: 6px;
+	padding-left:;
+	list-style-type: none;
+	text-align: left;
+	font-size: 0.9em;
+}
+
+.tabela-parcelamento {
+	border-radius: 50%;
+}
+
+.tabela-parcelamento ul:first-child {
+	padding-left: 35px;
+	border-right: 1px solid #BBB;
+}
+
+.tabela-parcelamento ul#digitos4 {
+	padding-left: 27px;
+}
+
+.tabela-parcelamento ul:last-child {
+	border-left: 1px solid #BBB;
+}
+
+.tabela-parcelamento ul li {
+	padding-left: 15px;
+}
+
+.tabela-parcelamento ul:first-child li {
+	border-left: 1px solid #BBB;
+}
+
+.tabela-parcelamento ul li:first-child {
+	padding-top: 15px;
+	border-top: 1px solid #BBB;
+}
+
+.tabela-parcelamento ul li:last-child {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #BBB;
+}
+
+.tabela-parcelamento ul li {
+	padding-right: 15px;
+}
+
+.tabela-parcelamento ul:last-child li {
+	border-right: 1px solid #BBB;
+}
+
+.par {
+	background: #EEE;
+}
+
+.impar {
+	background: #DDD;
+}
+
+div.single-product span.destaque {
+	color: #e65c00;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+div.single-product span.riscado {
+	text-decoration: line-through;
+}
+
+#primeiro-item-tabela-parcelamento {
+	border-top-left-radius: 5px;
+}
+
+#quarto-item-tabela-parcelamento {
+	border-bottom-left-radius: 5px;
+}
+
+#nono-item-tabela-parcelamento {
+	border-top-right-radius: 5px;
+}
+
+#decimo-primeiro-item-tabela-parcelamento {
+	border-bottom-right-radius: 5px;
+}
+
+.veja-tambem {
+	height: 210px;
+	width: 210px;
+	margin-bottom: 10px;
+}
+
+div .veja-tambem:first-child {
+	margin-left: 20px;
+}
+
+div .veja-tambem:last-child {
+	margin-right: 10px;
+}
+
+article.veja-tambem h3 {
+	border-bottom: 0;
+}
+
+article.veja-tambem a:link,
+article.veja-tambem a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+h2 a:link, 
+h2 a:visited,
+h2 a:hover,
+h2 a:active {
+	color: black;
+	opacity: 0.9;
+	font-style: italic;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+
+/* Fim da seção de estilo para página individual dos produtos */
+
+/* Estilo do rodapé */
+
+footer section {
+	float: left;
+}
+
+p#rights {
+	clear: both;
+	text-align: center;
+	font-size: 0.6em;
+	color: #DDD;
+	font-style: italic;
+}
+
+/* Estilo da newsletter e redes sociais*/
+
+section#newsletter {
+	margin: 20px 0 20px 20px;
+	color: white;
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+section#newsletter h2 {
+	margin: 0;
+	padding: 0;
+	color: white;
+	width: 100%;
+}
+
+section#newsletter form {
+	margin: 0 25px;
+}
+
+footer input[type="text"] {
+	width: 250px;
+	color: black;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 0;
+	padding: 9px;
+}
+
+section#social {
+	float: left;
+}
+
+section#social img {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	float: left;
+	position: relative;
+	left: 20px;
+	top: 10px;
+}
+
+/* Estilo das informações de pagamento e segurança */
+
+section#payment {
+	margin: 20px;
+	color: white;
+}
+
+section#payment h2 {
+	margin: 0;
+	padding: 0;
+	color: white;
+	width: 100%;
+}
+
+section#payment img {
+	width: 400px;
+	height: 40px;
+	margin-top: 10px;
+}
+
+footer img#ssl {
+	height: 50px;
+	width: 100px;
+	float: right;
+	position: relative;
+	top: 85px;
+	left: -5px;
+}

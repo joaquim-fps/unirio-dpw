@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>Mouse-pad Razer Goliathus WOT - SdG</title>
+		<link rel="stylesheet" href="../../styles/normalize.css">
+		<link rel="stylesheet" href="../../styles/main.css">
+		<link rel="stylesheet" href="../../fonts/font-awesome-4.0.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../styles/jcarousel-connected-carousels.css">
+		<script src="../../js/prefixfree.min.js"></script>
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/jquery.jcarousel.js"></script>
+		<script src="../../js/jcarousel-connected-carousels.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				<a href="../../index.html">
+					<div class="clearfix" id="logo">
+						<img src="../../images/logo.png" alt="logo"><h1>Senhor dos Games</h1>
+					</div>
+				</a>
+
+				<form id="search-box-input" method="get" action="../../search.html">
+					<div class="search-bar">
+						<input id="search-input-text" type="text" placeholder="Faça sua busca aqui...">
+						<button onClick="setLocalStorage()">Buscar</button>
+					</div>
+				</form>
+
+				<a href="../../carrinho.html">
+					<div id="cart">
+						<i class="fa fa-shopping-cart fa-4x"></i>
+					</div>
+				</a>
+			</header>
+
+			<nav class="clearfix">
+				<ul class="clearfix navigation">
+					<li>
+						<a href="../../index.html">
+							<div id="nav-home">
+								<p>Home</p>
+							</div>
+						</a>
+					</li>
+					<li>
+							<a href="../../mouses/index.html">
+								<div id="nav-mouse">
+									<p>Mouses</p>
+								</div>
+							</a>
+						<ol class="drop-down mouse-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Marcas</h3></div></li>
+							<li class="marca"><a href="../../mouses/corsair.html"><div class="marca-menu-drop">Corsair</div></a></li>
+							<li class="marca"><a href="../../mouses/razer.html"><div class="marca-menu-drop">Razer</div></a></li>
+							<li class="marca"><a href="../../mouses/steelseries.html"><div class="marca-menu-drop">Steelseries</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="../index.html">
+							<div id="nav-pads" class="active">
+								<p>Mouse-pads</p>
+							</div>
+						</a>
+						<ol class="drop-down pad-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Marcas</h3></div></li>
+							<li class="marca"><a href="../corsair.html"><div class="marca-menu-drop">Corsair</div></a></li>
+							<li class="marca"><a href="../razer.html"><div class="marca-menu-drop">Razer</div></a></li>
+							<li class="marca"><a href="../steelseries.html"><div class="marca-menu-drop">Steelseries</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="../../fones/index.html">
+							<div id="nav-headphone">
+								<p>Fones de ouvido</p>
+							</div>
+						</a>
+						<ol class="drop-down fone-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Marcas</h3></div></li>
+							<li class="marca"><a href="../../fones/sennheiser.html"><div class="marca-menu-drop">Sennheiser</div></a></li>
+							<li class="marca"><a href="../../fones/steelseries.html"><div class="marca-menu-drop">Steelseries</div></a></li>
+							<li class="marca"><a href="../../fones/thermaltake.html"><div class="marca-menu-drop">Thermaltake</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="../../teclados/index.html">
+							<div id="nav-keyboard">
+								<p>Teclados</p>
+							</div>
+						</a>
+						<ol class="drop-down keyboard-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Marcas</h3></div></li>
+							<li class="marca"><a href="../../teclados/corsair.html"><div class="marca-menu-drop">Corsair</div></a></li>
+							<li class="marca"><a href="../../teclados/razer.html"><div class="marca-menu-drop">Razer</div></a></li>
+							<li class="marca"><a href="../../teclados/thermaltake.html"><div class="marca-menu-drop">Thermaltake</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="../../combos/index.html">
+							<div id ="nav-combos">
+								<p>Combos</p>
+							</div>
+						</a>
+						<ol class="drop-down combo-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Kits</h3></div></li>
+							<li class="marca"><a href="../../combos/produtos/kit-basico.html"><div class="marca-menu-drop">Básico</div></a></li>
+							<li class="marca"><a href="../../combos/produtos/kit-intermediario.html"><div class="marca-menu-drop">Intermediário</div></a></li>
+							<li class="marca"><a href="../../combos/produtos/kit-avancado.html"><div class="marca-menu-drop">Avançado</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="../../contato.html">
+							<div id="nav-contact">
+								<p>Contato</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<section class="clearfix">
+				<div class="single-product clearfix">
+					<h2><a href="../index.html">Mouse-pads</a> - <a href="../razer.html">Razer</a> - Razer Goliathus World of Tanks Edition</h2>
+
+					<div class="connected-carousels">
+                		<div class="stage">
+                    		<div class="carousel carousel-stage" data-jcarousel="true">
+                        		<ul style="left: 0px; top: 0px;">
+                           			<li><img src="../../images/products/Razer Goliathus WOT.png" width="480" height="400" alt=""></li>
+                            		<li><img src="../../images/products/Razer Goliathus WOT - 2.jpg" width="480" height="400" alt=""></li>
+                            		<li><img src="../../images/products/Razer Deathadder World of Tanks - 4.png" width="480" height="400" alt=""></li>
+                            		<li><img src="../../images/products/Razer Goliathus WOT - 4.png" width="480" height="400" alt=""></li>
+                        		</ul>
+                    		</div>
+
+                   			<a href="#" class="prev prev-stage inactive" data-jcarouselcontrol="true"><span>‹</span></a>
+                    		<a href="#" class="next next-stage" data-jcarouselcontrol="true"><span>›</span></a>
+                		</div>
+
+                		<div class="navigation">
+                    		<a href="#" class="prev prev-navigation inactive" data-jcarouselcontrol="true">‹</a>
+                    		<a href="#" class="next next-navigation" data-jcarouselcontrol="true">›</a>
+
+                    		<div class="carousel carousel-navigation" data-jcarousel="true">
+                        		<ul style="left: 0px; top: 0px;">
+                            		<li data-jcarouselcontrol="true" class="active"><img src="../../images/products/Razer Goliathus WOT.png" width="50" height="50" alt=""></li>
+                            		<li data-jcarouselcontrol="true"><img src="../../images/products/Razer Goliathus WOT - 2.jpg" width="50" height="50" alt=""></li>
+                            		<li data-jcarouselcontrol="true" class=""><img src="../../images/products/Razer Deathadder World of Tanks - 4.png" width="50" height="50" alt=""></li>
+                            		<li data-jcarouselcontrol="true" class=""><img src="../../images/products/Razer Goliathus WOT - 4.png" width="50" height="50" alt=""></li>
+                        		</ul>
+                    		</div>
+                		</div>
+            		</div>
+
+            		<div class="buy">
+            			<section>
+            				<form class="cart-form" method="post" action="../../carrinho.html">
+								<input type="hidden" value="images/products/Razer Goliathus WOT.png">
+								<input type="hidden" value="mouse-pads/produtos/razer-goliathus-wot.html">
+								<input type="hidden" value="Mouse-pad Razer Goliathus World of Tanks Edition">
+								<input type="hidden" value="60.00">
+								<input type="hidden" value="1">
+								<button>Comprar</button>
+							</form>
+            				<p class="green"><i class="fa fa-check 2x green"></i> Disponível - Pronta Entrega</p>
+							<p><span class="riscado"></span><span class="destaque price">R$60,00</span></p>
+							<p>Em até <span class="destaque">12x</span> de <span class="destaque 12x"></span> no cartão!<br><span class="destaque percent10"></span> à vista com <span class="destaque">10%</span> de desconto!</p>
+						</section>
+
+						<section>
+							<h3>Parcelamento</h3>
+							<p><img src="../../images/parcelamento.png"></p>
+
+							<div class="tabela-parcelamento clearfix">
+								<ul>
+									<li class="impar" id="primeiro-item-tabela-parcelamento">1x <span id="1x"></span></li>
+									<li class="par">2x <span id="2x"></span></li>
+									<li class="impar">3x <span id="3x"></span></li>
+									<li class="par" id="quarto-item-tabela-parcelamento">4x <span id="4x"></span></li>
+								</ul>
+								<ul>
+									<li class="impar">5x <span id="5x"></span></li>
+									<li class="par">6x <span id="6x"></span></li>
+									<li class="impar">7x <span id="7x"></span></li>
+									<li class="par">8x <span id="8x"></span></li>
+								</ul>
+								<ul>	
+									<li class="impar" id="nono-item-tabela-parcelamento">9x <span id="9x"></span></li>
+									<li class="par">10x <span id="10x"></span></li>
+									<li class="impar">11x <span id="11x"></span></li>
+									<li class="par" id="decimo-primeiro-item-tabela-parcelamento">12x <span id="12x"></span></li>
+								</ul>
+							</div>
+						</section>
+					</div>
+
+					<div class="clearfix"></div>
+
+					<section>
+						<h3>Descrição</h3>
+
+						<p>A superfície deslizante de aumento de velocidade Razer Goliathus para o World of Tanks mistura a alta aceleração com as respostas precisas que fornecem aos jogadores o deslizamento mais rápido e suave para obter o tiro mais preciso contra os inimigos de forma eficiente.</p>
+					</section>
+
+					<section>
+						<h3>Especificações</h3>
+
+						<p>Características:<p>
+
+						<ul>
+							<li>Marca: Razer</li>
+							<li>Modelo: RZ-21953478-G3U2</li>
+						</ul>
+ 
+						<p>Especifições:</p>
+
+						<ul>
+							<li>Tecido esticado para movimentos velozes de mouse</li>
+							<li>Mira e tracking com precisão de pixels</li>
+							<li>Otimizado para todas as sensibilidades de mouse e sensores</li>
+							<li>Design estilo flanela, altamente portátil</li>
+							<li>Moldura costurada e antidesfiamento</li>
+							<li>Base de borracha anti-derrapante</li>
+							<li>Comprimento: 355mm / 13.98"</li>
+							<li>Largura: 254mm / 10"</li>
+							<li>Altura: 3mm / 0.12"</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Garantia</h3>
+
+						<p>3 meses de garantia.</p>
+					</section>
+
+					<section class="clearfixs">
+						<h3>Veja também</h3>
+
+						<div class="clearfix">
+							<article class="article-change veja-tambem">
+								<a href="../../mouses/produtos/razer-deathadder-wot.html">
+									<div class="product">
+										<img src="../../images/products/Razer Deathadder World of Tanks.png">
+										<h3>Mouse Razer Deathadder World of Tanks Edition</h3>
+									</div>
+								</a>
+							</article>
+				  
+							<article class="article-change veja-tambem">
+								<a href="razer-goliathus-speed.html">
+									<div class="product">
+										<img src="../../images/products/Razer Goliathus Speed.png">
+										<h3>Mouse-pad Razer Goliathus Speed</h3>
+									</div>
+								</a>
+							</article>
+
+							<article class="article-change veja-tambem">
+								<a href="steelseries-qck-mini.html">
+									<div class="product">
+										<img src="../../images/products/Steelseries QcK Mini.png">
+										<h3>Mouse-pad Steelseries QcK Mini</h3>
+									</div>
+								</a>
+							</article>
+							<article class="article-change veja-tambem">
+								<a href="steelseries-qck-plus-navi.html">
+									<div class="product">
+										<img src="../../images/products/Steelseries QcK Navi.png">
+										<h3>Mouse-pad Steelseries QcK+ Navi</h3>
+									</div>
+								</a>
+							</article>
+						</div>
+					</section>
+				</div>	
+		    </section>
+
+		    <footer class="clearfix">
+
+		    	<section id="newsletter">
+		    		<h2>Newsletter</h2>
+		    		<p>Assine e concorra a cupons promocionais todo mês!</p>
+					<form method="post" action="#">
+		    			<input type="text" placeholder="Escreva seu email aqui...">
+		    			<button type="submit">Assinar</button>
+		    		</form>
+		    	</section>
+
+		    	<section id="payment">
+		    		<h2>Formas de pagamento</h2>
+		    		<p><img src="../../images/pagamento.png" alt="payment"></p>
+		    	</section>
+
+		    	<section id="social">
+		    		<a href="http://www.facebook.com.br" target="_blank"><img src="../../images/facebook-link.png" onmouseover="this.src='../../images/facebook-active.png'" onmouseout="this.src='../../images/facebook-link.png'" alt="facebook"></a>
+		    		<a href="http://www.twitter.com" target="_blank"><img src="../../images/twitter-link.png" onmouseover="this.src='../../images/twitter-active.png'" onmouseout="this.src='../../images/twitter-link.png'" alt="twitter"></a>
+		    	</section>
+		    	<img src="../../images/ssl.png" alt="security" id="ssl">
+		    	<p id="rights">Todos os direitos reservados | Site criado por Joaquim Ferreira Palmeira da Silva</p>
+		    </footer>
+		</div>
+
+		<script>
+			$(document).ready(function() {
+       			$('.article-change').bind("mouseover", function(){
+            		var color  = $(this).css("background-color");
+
+            		$(this).css("background", "#EEE");
+
+            		$(this).bind("mouseout", function(){
+               			 $(this).css("background", color);
+            		})    
+        		})    
+    		})
+		</script>
+		<script src="../../js/search.js"></script>
+		<script src="../../js/priceGenerator.js"></script>
+		<script src="../../js/shoppingCart.js"></script>
+	</body>
+
+</html>

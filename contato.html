@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - SdG</title>
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="fonts/font-awesome-4.0.3/css/font-awesome.min.css">
+		<script src="js/prefixfree.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				<a href="index.html">
+					<div class="clearfix" id="logo">
+						<img src="images/logo.png" alt="logo"><h1>Senhor dos Games</h1>
+					</div>
+				</a>
+
+				<form id="search-box-input" method="get" action="search.html">
+					<div class="search-bar">
+						<input id="search-input-text" type="text" placeholder="Faça sua busca aqui...">
+						<button onClick="setLocalStorage()">Buscar</button>
+					</div>
+				</form>
+
+				<a href="carrinho.html">
+					<div id="cart">
+						<i class="fa fa-shopping-cart fa-4x"></i>
+					</div>
+				</a>
+			</header>
+
+			<nav class="clearfix">
+				<ul class="clearfix navigation">
+					<li>
+						<a href="index.html">
+							<div id="nav-home">
+								<p>Home</p>
+							</div>
+						</a>
+					</li>
+					<li>
+							<a href="mouses/index.html">
+								<div id="nav-mouse">
+									<p>Mouses</p>
+								</div>
+							</a>
+						<ol class="drop-down mouse-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Marcas</h3></div></li>
+							<li class="marca"><a href="mouses/corsair.html"><div class="marca-menu-drop">Corsair</div></a></li>
+							<li class="marca"><a href="mouses/razer.html"><div class="marca-menu-drop">Razer</div></a></li>
+							<li class="marca"><a href="mouses/steelseries.html"><div class="marca-menu-drop">Steelseries</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="mouse-pads/index.html">
+							<div id="nav-pads">
+								<p>Mouse-pads</p>
+							</div>
+						</a>
+						<ol class="drop-down pad-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Marcas</h3></div></li>
+							<li class="marca"><a href="mouse-pads/corsair.html"><div class="marca-menu-drop">Corsair</div></a></li>
+							<li class="marca"><a href="mouse-pads/razer.html"><div class="marca-menu-drop">Razer</div></a></li>
+							<li class="marca"><a href="mouse-pads/steelseries.html"><div class="marca-menu-drop">Steelseries</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="fones/index.html">
+							<div id="nav-headphone">
+								<p>Fones de ouvido</p>
+							</div>
+						</a>
+						<ol class="drop-down fone-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Marcas</h3></div></li>
+							<li class="marca"><a href="fones/sennheiser.html"><div class="marca-menu-drop">Sennheiser</div></a></li>
+							<li class="marca"><a href="fones/steelseries.html"><div class="marca-menu-drop">Steelseries</div></a></li>
+							<li class="marca"><a href="fones/thermaltake.html"><div class="marca-menu-drop">Thermaltake</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="teclados/index.html">
+							<div id="nav-keyboard">
+								<p>Teclados</p>
+							</div>
+						</a>
+						<ol class="drop-down keyboard-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Marcas</h3></div></li>
+							<li class="marca"><a href="teclados/corsair.html"><div class="marca-menu-drop">Corsair</div></a></li>
+							<li class="marca"><a href="teclados/razer.html"><div class="marca-menu-drop">Razer</div></a></li>
+							<li class="marca"><a href="teclados/thermaltake.html"><div class="marca-menu-drop">Thermaltake</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="combos/index.html">
+							<div id ="nav-combos">
+								<p>Combos</p>
+							</div>
+						</a>
+						<ol class="drop-down combo-menu">
+							<li class="marca"><div class="titulo-menu-drop"><h3>Kits</h3></div></li>
+							<li class="marca"><a href="combos/produtos/kit-basico.html"><div class="marca-menu-drop">Básico</div></a></li>
+							<li class="marca"><a href="combos/produtos/kit-intermediario.html"><div class="marca-menu-drop">Intermediário</div></a></li>
+							<li class="marca"><a href="combos/produtos/kit-avancado.html"><div class="marca-menu-drop">Avançado</div></a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="contato.html">
+							<div id="nav-contact" class="active">
+								<p>Contato</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<section class="clearfix">
+				<section id="contact-form">
+					<h2>Contate-nos</h2>
+
+					<section id="contact-email-form">
+						<h3><img src="images/email-icon.png" alt="email"> E-mail</h3>
+						<form name="contact-form" id="send-contact-form" onsubmit="return validateForm();" method="post" action="" novalidate>
+							<p>
+								<label for="email">E-mail:</label>
+								<input type="email" id="email" name="email">
+								<span class="hint">Exemplo: seunome@dominio.com.</span><br>
+								<span id="email-validate1">Este campo deve ser preenchido.</span>
+								<span id="email-validate2">Preencha o campo conforme o exemplo.</span>
+								<span id="email-validate3">O email contém caracteres especiais inválidos.</span>
+							</p>
+							<p>
+								<label for="name">Nome:</label>
+								<input type="text" id="name" name="name">
+								<span id="name-validate">Este campo deve ser preenchido.</span>
+							</p>
+							<p>
+								<label for="subject">Assunto:</label>
+								<input type="text" id="subject" name="subject">
+								<span id="subject-validate">Este campo deve ser preenchido.</span>
+							</p>
+							<p>
+								<label for="message">Mensagem:</label>
+								<textarea id="message" name="message"></textarea>
+								<span class="hint">Escreva sua mensagem em até 500 caracteres.</span>
+								<span id="message-validate1">Este campo deve ser preenchido.</span>
+								<span id="message-validate2">Mensagem passou do limite de caracteres (500).</span>
+							</p>
+							<button type="submit" id="send-contact">Enviar</button>
+						</form>
+					</section>
+					<section id="contact-phone">
+						<div id="phones">
+							<h3><img src="images/phone-icon.png" alt="phone"> Telefones</h3>
+							<p><span class="negrito">Tel 1:</span> 0800-2955-4345</p>
+							<p><span class="negrito">Tel 2:</span> 0800-2324-2123</p>
+							<p><span class="negrito">Tel 3:</span> 0800-2691-5749</p>
+						</div>
+
+						<h3><img src="images/clock-icon.png" alt="clock"> Horários</h3>
+						<p><span class="negrito">Seg a Sex:</span> 8:00 às 17:00</p>
+						<p><span class="negrito">Sáb e Dom:</span> 8:00 às 13:00</p>
+					</section>
+				</section>
+		    </section>
+
+		    <footer class="clearfix">
+
+		    	<section id="newsletter">
+		    		<h2>Newsletter</h2>
+		    		<p>Assine e concorra a cupons promocionais todo mês!</p>
+					<form>
+		    			<input type="text" placeholder="Escreva seu email aqui...">
+		    			<button type="submit">Assinar</button>
+		    		</form>
+		    	</section>
+
+		    	<section id="payment">
+		    		<h2>Formas de pagamento</h2>
+		    		<p><img src="images/pagamento.png" alt="payment"></p>
+		    	</section>
+
+		    	<section id="social">
+		    		<a href="http://www.facebook.com.br" target="_blank"><img src="images/facebook-link.png" onmouseover="this.src='images/facebook-active.png'" onmouseout="this.src='images/facebook-link.png'" alt="facebook"></a>
+		    		<a href="http://www.twitter.com" target="_blank"><img src="images/twitter-link.png" onmouseover="this.src='images/twitter-active.png'" onmouseout="this.src='images/twitter-link.png'" alt="twitter"></a>
+		    	</section>
+		    	<img src="images/ssl.png" alt="security" id="ssl">
+		    	<p id="rights">Todos os direitos reservados | Site criado por Joaquim Ferreira Palmeira da Silva</p>
+		    </footer>
+		</div>
+		<script src="js/search.js"></script>
+		<script src="js/validate.js"></script>
+	</body>
+
+</html>	
